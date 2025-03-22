@@ -22,6 +22,28 @@ pub struct MerkleTree {
     leaves: Vec<MerkleNode>,
 }
 
+impl MerkleNode {
+    // Create a leaf node
+    
+    // Create a branch node from two child nodes
+    
+    // Get the hash of this node
+}
+
+impl MerkleTree {
+    // Create a new Merkle tree from a list of data items
+    
+    // Build the tree recursively
+    
+    // Get the root hash
+    
+    // Get the root hash as a hex string
+    
+    // Generate a proof for a specific leaf
+    
+    // Verify a proof
+}
+
 impl fmt::Debug for MerkleNode {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
