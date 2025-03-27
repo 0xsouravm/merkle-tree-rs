@@ -1,4 +1,3 @@
-use hex;
 use merkleproof::MerkleTree;
 
 fn main() {
