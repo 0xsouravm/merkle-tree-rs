@@ -7,7 +7,7 @@
 [![Documentation](https://docs.rs/merkleproof/badge.svg)](https://docs.rs/merkleproof)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Rust](https://img.shields.io/badge/rust-1.65%2B-orange.svg)](https://www.rust-lang.org)
-[![Build Status](https://img.shields.io/github/workflow/status/0xsouravm/merkle-tree-rs/CI)](https://github.com/0xsouravm/merkle-tree-rs/actions)
+![GitHub Workflow Status](https://github.com/0xsouravm/merkle-tree-rs/actions/workflows/rust.yml/badge.svg)
 
 A robust, efficient, and well-documented implementation of Merkle trees in Rust.
 
