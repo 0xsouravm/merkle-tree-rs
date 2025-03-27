@@ -35,10 +35,8 @@ impl MerkleTree {
         }
 
         // Create leaf nodes
-        let mut leaves: Vec<MerkleNode> = data_items
-            .into_iter()
-            .map(MerkleNode::new_leaf)
-            .collect();
+        let mut leaves: Vec<MerkleNode> =
+            data_items.into_iter().map(MerkleNode::new_leaf).collect();
 
         // Special case for single node - don't duplicate it
         if leaves.len() == 1 {
