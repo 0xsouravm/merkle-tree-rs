@@ -1,4 +1,3 @@
-use hex;
 use sha2::{Digest, Sha256};
 use std::fmt;
 
@@ -58,8 +57,8 @@ impl MerkleNode {
     /// A new branch node containing the child nodes and the combined hash
     pub fn new_branch(left: MerkleNode, right: MerkleNode) -> Self {
         let mut hasher = Sha256::new();
-        hasher.update(&left.hash());
-        hasher.update(&right.hash());
+        hasher.update(left.hash());
+        hasher.update(right.hash());
         let hash = hasher.finalize().to_vec();
 
         MerkleNode::Branch {

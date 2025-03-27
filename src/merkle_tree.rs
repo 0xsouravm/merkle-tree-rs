@@ -1,6 +1,5 @@
 use crate::merkle_node::MerkleNode;
 use crate::MerkleProof;
-use hex;
 use sha2::{Digest, Sha256};
 
 /// The main Merkle tree structure
@@ -38,7 +37,7 @@ impl MerkleTree {
         // Create leaf nodes
         let mut leaves: Vec<MerkleNode> = data_items
             .into_iter()
-            .map(|data| MerkleNode::new_leaf(data))
+            .map(MerkleNode::new_leaf)
             .collect();
 
         // Special case for single node - don't duplicate it
